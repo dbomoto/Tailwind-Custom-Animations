@@ -1,0 +1,5 @@
+   - take not of the 'test' script and the '&&' used, this is the method to sequentially run scripts in order, it will wait until the first one is finished before proceeding to the next script.
+
+   - you cannot put comments on the package.json file, it will produce an invalid character error
+
+   - .replit file will handle what script the Replit Play Button will run.

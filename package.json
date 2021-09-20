@@ -1,0 +1,27 @@
+{
+  "name": "TailwindCSS-Generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run homeCSS && npm run start",
+    "portfolio": "npm run portfolioCSS && npm run start",
+    "start": "node index.js",
+    "devStart": "nodemon -e html,js,css --watch public ./index.js",
+    "homeCSS": "postcss sourceTailwind.css -o ./public/home/home.css",
+    "portfolioCSS": "postcss sourceTailwind.css -o ./public/portfolio/portfolio.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "nodemon": "^2.0.12",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  }
+}

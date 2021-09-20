@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <link href="/public/home/home.css" rel="stylesheet" type="text/css">
+  <!-- ... -->
+</head>
+<body>
+
+<!-- The div below is used to declare the custom animation styles so that during build time, Tailwind will not purge it from the final CSS. -->
+  <div class="scale-up-center scale-up-left" style="display:none;">test</div>
+
+<div class="my-5">
+<a class="bg-gray-400 rounded text-2xl border-gray-600" href="/portfolio">PORTFOLIO</a><br>
+<div>
+
+
+<!-- 
+  SCALE-UP-CENTER
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-CENTER</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-center">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-center')">Custom Animation</div>
+<!-- 
+  SCALE-UP-LEFT
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-LEFT</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-left">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-left')">Custom Animation</div>
+<!-- 
+  SCALE-UP-RIGHT
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-RIGHT</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-right">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-right')">Custom Animation</div>
+<!-- 
+  SCALE-UP-TOP
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-TOP</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-top">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-top')">Custom Animation</div>
+<!-- 
+  SCALE-UP-BOTTOM
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-BOTTOM</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-bottom">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-bottom')">Custom Animation</div>
+<!-- 
+  SCALE-UP-HOR-CENTER
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-HOR-CENTER</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-hor-center">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-hor-center')">Custom Animation</div>
+<!-- 
+  SCALE-UP-HOR-LEFT
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-HOR-LEFT</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-hor-left">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-hor-left')">Custom Animation</div>
+<!-- 
+  SCALE-UP-HOR-RIGHT
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-HOR-RIGHT</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-hor-right">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-hor-right')">Custom Animation</div>
+<!-- 
+  SCALE-UP-VER-CENTER
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-VER-CENTER</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-ver-center">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-ver-center')">Custom Animation</div>
+<!-- 
+  SCALE-UP-VER-TOP
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-VER-TOP</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-ver-top">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-ver-top')">Custom Animation</div>
+
+<!-- 
+  SCALE-UP-VER-BOTTOM
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-VER-BOTTOM</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-ver-bottom">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-ver-bottom')">Custom Animation</div>
+<!-- 
+  SCALE-UP-BL
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-BL</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-bl">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-bl')">Custom Animation</div>
+<!-- 
+  SCALE-UP-BR
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-BR</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-br">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-br')">Custom Animation</div>
+<!-- 
+  SCALE-UP-TL
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-TL</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-tl">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-tl')">Custom Animation</div>
+<!-- 
+  SCALE-UP-TR
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-UP-TR</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-up-tr">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-up-tr')">Custom Animation</div>
+<!--
+  SCALE-DOWN-CENTER
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-DOWN-CENTER</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-down-center">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-down-center')">Custom Animation</div>
+<!--
+  SCALE-DOWN-VER-TOP
+ -->
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">SCALE-DOWN-VER-TOP</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:scale-down-ver-top">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'scale-down-ver-top')">Custom Animation</div>
+
+
+  
+<script src="/public/home/home.js"></script>
+</body>
+</html>
