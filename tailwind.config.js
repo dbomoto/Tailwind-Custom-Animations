@@ -4,8 +4,8 @@ module.exports = {
   mode: 'jit',
   // compare the classes used in the files declared in purge vs the tailwind source css to produce a smaller size css with only the relevant classes.
   purge: { 
-    content: ['./public/portfolio/portfolio.html'],
-    // content: ['./public/home/home.html'],
+    // content: ['./public/portfolio/portfolio.html'],
+    content: ['./public/home/home.html'],
     options: {
       keyframes: true,
     }
