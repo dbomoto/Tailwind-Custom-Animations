@@ -386,6 +386,17 @@ running
       transform-origin: 100% 50%;
     }
   }
+  .scale-down-hor-center {
+    animation: scale-down-hor-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  @keyframes scale-down-hor-center {
+    0% {
+      transform: scaleX(1);
+    }
+    100% {
+      transform: scaleX(0.3);
+    }
+  }
 
 
 

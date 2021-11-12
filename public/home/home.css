@@ -1176,6 +1176,26 @@ video {
       transform-origin: 100% 50%;
     }
   }
+.scale-down-hor-center {
+    -webkit-animation: scale-down-hor-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: scale-down-hor-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+@-webkit-keyframes scale-down-hor-center {
+    0% {
+      transform: scaleX(1);
+    }
+    100% {
+      transform: scaleX(0.3);
+    }
+  }
+@keyframes scale-down-hor-center {
+    0% {
+      transform: scaleX(1);
+    }
+    100% {
+      transform: scaleX(0.3);
+    }
+  }
 /* 
 The 'animation' property is a shorthand property for:
 
@@ -1319,4 +1339,8 @@ running
 .group:hover .group-hover\:scale-down-right {
     -webkit-animation: scale-down-right 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: scale-down-right 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+.group:hover .group-hover\:scale-down-hor-center {
+    -webkit-animation: scale-down-hor-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: scale-down-hor-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
