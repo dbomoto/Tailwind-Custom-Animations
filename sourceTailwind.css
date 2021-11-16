@@ -453,6 +453,17 @@ running
       transform-origin: 100% 100%;
     }
   }
+  .rotate-center {
+    animation: rotate-center 0.6s ease-in-out both;
+  }
+  @keyframes rotate-center {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 
 
