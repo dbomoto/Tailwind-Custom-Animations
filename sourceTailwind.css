@@ -489,6 +489,24 @@ running
     }
   }
 
+  .rotate-diagonal-br {
+    animation: rotate-diagonal-br 0.4s linear both;
+  }
+  @keyframes rotate-diagonal-br {
+    0% {
+      transform: rotate3d(-1, 1, 0, 0deg);
+      transform-origin: 100% 100%;
+    }
+    50% {
+      transform: rotate3d(-1, 1, 0, -180deg);
+      transform-origin: 100% 100%;
+    }
+    100% {
+      transform: rotate3d(-1, 1, 0, -360deg);
+      transform-origin: 100% 100%;
+    }
+  }
+
 
 
 
