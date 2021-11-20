@@ -519,6 +519,19 @@ running
       transform-origin: top;
     }
   }
+  .rotate-left {
+    animation: rotate-left 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+  @keyframes rotate-left {
+    0% {
+      transform: rotate(0);
+      transform-origin: left;
+    }
+    100% {
+      transform: rotate(360deg);
+      transform-origin: left;
+    }
+  }
 
 
 
