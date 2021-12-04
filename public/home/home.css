@@ -1564,6 +1564,38 @@ video {
       transform-origin: right;
     }
   }
+.rotate-diagonal-tl {
+    -webkit-animation: rotate-diagonal-tl 0.4s linear both;
+            animation: rotate-diagonal-tl 0.4s linear both;
+  }
+@-webkit-keyframes rotate-diagonal-tl {
+    0% {
+      transform: rotate3d(-1, 1, 0, 0deg);
+      transform-origin: 0% 0%;
+    }
+    50% {
+      transform: rotate3d(-1, 1, 0, 180deg);
+      transform-origin: 0% 0%;
+    }
+    100% {
+      transform: rotate3d(-1, 1, 0, 360deg);
+      transform-origin: 0% 0%;
+    }
+  }
+@keyframes rotate-diagonal-tl {
+    0% {
+      transform: rotate3d(-1, 1, 0, 0deg);
+      transform-origin: 0% 0%;
+    }
+    50% {
+      transform: rotate3d(-1, 1, 0, 180deg);
+      transform-origin: 0% 0%;
+    }
+    100% {
+      transform: rotate3d(-1, 1, 0, 360deg);
+      transform-origin: 0% 0%;
+    }
+  }
 /* 
 The 'animation' property is a shorthand property for:
 
@@ -1771,4 +1803,8 @@ running
 .group:hover .group-hover\:rotate-vert-right {
     -webkit-animation: rotate-vert-right 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
             animation: rotate-vert-right 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
+  }
+.group:hover .group-hover\:rotate-diagonal-tl {
+    -webkit-animation: rotate-diagonal-tl 0.4s linear both;
+            animation: rotate-diagonal-tl 0.4s linear both;
   }
