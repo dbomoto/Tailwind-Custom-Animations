@@ -632,6 +632,17 @@ running
       transform-origin: right;
     }
   }
+  .rotate-hor-center {
+    animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+  @keyframes rotate-hor-center {
+    0% {
+      transform: rotateX(0);
+    }
+    100% {
+      transform: rotateX(-360deg);
+    }
+  }
 
 
 
