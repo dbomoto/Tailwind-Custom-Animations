@@ -670,6 +670,20 @@ running
       transform-origin: bottom right;
     }
   }
+  .rotate-hor-top {
+    animation: rotate-hor-top 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
+  }
+  @keyframes rotate-hor-top {
+    0% {
+      transform: rotateX(0);
+      transform-origin: top;
+    }
+    100% {
+      transform: rotateX(-360deg);
+      transform-origin: top;
+    }
+  }
+
 
 
 
