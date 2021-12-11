@@ -683,6 +683,21 @@ running
       transform-origin: top;
     }
   }
+  .rotate-diagonal-2 {
+    animation: rotate-diagonal-2 0.4s linear both;
+  }
+  @keyframes rotate-diagonal-2 {
+    0% {
+      transform: rotate3d(-1, 1, 0, 0deg);
+    }
+    50% {
+      transform: rotate3d(-1, 1, 0, 180deg);
+    }
+    100% {
+      transform: rotate3d(-1, 1, 0, 360deg);
+    }
+  }
+
 
 
 
