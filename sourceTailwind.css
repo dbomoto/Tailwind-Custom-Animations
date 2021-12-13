@@ -697,7 +697,19 @@ running
       transform: rotate3d(-1, 1, 0, 360deg);
     }
   }
-
+  .rotate-bottom {
+    animation: rotate-bottom 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+  @keyframes rotate-bottom {
+    0% {
+      transform: rotate(0);
+      transform-origin: bottom;
+    }
+    100% {
+      transform: rotate(360deg);
+      transform-origin: bottom;
+    }
+  }
 
 
 
