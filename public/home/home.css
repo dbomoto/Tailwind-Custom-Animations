@@ -1764,6 +1764,30 @@ video {
       transform-origin: bottom;
     }
   }
+.rotate-hor-bottom {
+    -webkit-animation: rotate-hor-bottom 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
+            animation: rotate-hor-bottom 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
+  }
+@-webkit-keyframes rotate-hor-bottom {
+    0% {
+      transform: rotateX(0);
+      transform-origin: bottom;
+    }
+    100% {
+      transform: rotateX(360deg);
+      transform-origin: bottom;
+    }
+  }
+@keyframes rotate-hor-bottom {
+    0% {
+      transform: rotateX(0);
+      transform-origin: bottom;
+    }
+    100% {
+      transform: rotateX(360deg);
+      transform-origin: bottom;
+    }
+  }
 /* 
 The 'animation' property is a shorthand property for:
 
@@ -2003,4 +2027,8 @@ running
 .group:hover .group-hover\:rotate-bottom {
     -webkit-animation: rotate-bottom 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
             animation: rotate-bottom 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+.group:hover .group-hover\:rotate-hor-bottom {
+    -webkit-animation: rotate-hor-bottom 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
+            animation: rotate-hor-bottom 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
   }

@@ -710,6 +710,20 @@ running
       transform-origin: bottom;
     }
   }
+  .rotate-hor-bottom {
+    animation: rotate-hor-bottom 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
+  }
+  @keyframes rotate-hor-bottom {
+    0% {
+      transform: rotateX(0);
+      transform-origin: bottom;
+    }
+    100% {
+      transform: rotateX(360deg);
+      transform-origin: bottom;
+    }
+  }
+
 
 
 
