@@ -1846,6 +1846,32 @@ video {
       transform: scale(1) rotateZ(360deg);
     }
   }
+.rotate-scale-down {
+    -webkit-animation: rotate-scale-down 0.65s linear both;
+            animation: rotate-scale-down 0.65s linear both;
+  }
+@-webkit-keyframes rotate-scale-down {
+    0% {
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      transform: scale(0.5) rotateZ(180deg);
+    }
+    100% {
+      transform: scale(1) rotateZ(360deg);
+    }
+  }
+@keyframes rotate-scale-down {
+    0% {
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      transform: scale(0.5) rotateZ(180deg);
+    }
+    100% {
+      transform: scale(1) rotateZ(360deg);
+    }
+  }
 .rotate-scale-down-ver {
     -webkit-animation: rotate-scale-down-ver 0.65s linear both;
             animation: rotate-scale-down-ver 0.65s linear both;
@@ -2123,6 +2149,10 @@ running
 .group:hover .group-hover\:rotate-scale-up {
     -webkit-animation: rotate-scale-up 0.65s linear both;
             animation: rotate-scale-up 0.65s linear both;
+  }
+.group:hover .group-hover\:rotate-scale-down {
+    -webkit-animation: rotate-scale-down 0.65s linear both;
+            animation: rotate-scale-down 0.65s linear both;
   }
 .group:hover .group-hover\:rotate-scale-down-ver {
     -webkit-animation: rotate-scale-down-ver 0.65s linear both;
