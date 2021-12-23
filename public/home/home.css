@@ -1898,6 +1898,32 @@ video {
       transform: scale(1) rotateY(360deg);
     }
   }
+.rotate-scale-up-ver {
+    -webkit-animation: rotate-scale-up-ver 0.65s linear both;
+            animation: rotate-scale-up-ver 0.65s linear both;
+  }
+@-webkit-keyframes rotate-scale-up-ver {
+    0% {
+      transform: scale(1) rotateY(0);
+    }
+    50% {
+      transform: scale(2) rotateY(180deg);
+    }
+    100% {
+      transform: scale(1) rotateY(360deg);
+    }
+  }
+@keyframes rotate-scale-up-ver {
+    0% {
+      transform: scale(1) rotateY(0);
+    }
+    50% {
+      transform: scale(2) rotateY(180deg);
+    }
+    100% {
+      transform: scale(1) rotateY(360deg);
+    }
+  }
 /* 
 The 'animation' property is a shorthand property for:
 
@@ -2157,4 +2183,8 @@ running
 .group:hover .group-hover\:rotate-scale-down-ver {
     -webkit-animation: rotate-scale-down-ver 0.65s linear both;
             animation: rotate-scale-down-ver 0.65s linear both;
+  }
+.group:hover .group-hover\:rotate-scale-up-ver {
+    -webkit-animation: rotate-scale-up-ver 0.65s linear both;
+            animation: rotate-scale-up-ver 0.65s linear both;
   }
