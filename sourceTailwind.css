@@ -810,6 +810,20 @@ running
       transform: scale(1) rotateX(-360deg);
     }
   }
+  .rotate-scale-down-hor {
+    animation: rotate-scale-down-hor 0.65s linear both;
+  }
+  @keyframes rotate-scale-down-hor {
+    0% {
+      transform: scale(1) rotateX(0);
+    }
+    50% {
+      transform: scale(0.5) rotateX(-180deg);
+    }
+    100% {
+      transform: scale(1) rotateX(-360deg);
+    }
+  }
 
 
 
