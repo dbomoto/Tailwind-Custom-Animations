@@ -852,6 +852,21 @@ running
       transform: scale(1) rotate3d(1, 1, 0, -360deg);
     }
   }
+  .rotate-scale-up-diag-2 {
+    animation: rotate-scale-up-diag-2 0.7s linear both;
+  }  
+  @keyframes rotate-scale-up-diag-2 {
+    0% {
+      transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    }
+    50% {
+      transform: scale(2) rotate3d(-1, 1, 0, 180deg);
+    }
+    100% {
+      transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+    }
+  }
+
 
 
 
