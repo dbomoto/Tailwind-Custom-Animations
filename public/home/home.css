@@ -2080,6 +2080,26 @@ video {
       transform: scale(1) rotate3d(-1, 1, 0, 360deg);
     }
   }
+.rotate-90-cw {
+    -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+@-webkit-keyframes rotate-90-cw {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+@keyframes rotate-90-cw {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
 /* 
 The 'animation' property is a shorthand property for:
 
@@ -2367,4 +2387,8 @@ running
 .group:hover .group-hover\:rotate-scale-down-diag-2 {
     -webkit-animation: rotate-scale-down-diag-2 0.7s linear both;
             animation: rotate-scale-down-diag-2 0.7s linear both;
+  }
+.group:hover .group-hover\:rotate-90-cw {
+    -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
