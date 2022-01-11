@@ -758,6 +758,17 @@
 <hr>
 <h3>Click Event</h3>
 <div class="text-3xl bg-red-400" onclick="clickTest(this,'rotate-90-right-cw')">Custom Animation</div>
+<!--
+  ROTATE 90 BL CW
+<!-- Cannot combine the same animation in multiple events (e.g. hover and click) -->
+<h2 class="text-center">ROTATE-90-BL-CW</h2>
+<h3>Hover Class</h3>
+<div class="group">
+  <div class="text-3xl bg-red-400 group-hover:rotate-90-bl-cw">Custom Animation</div>
+</div>
+<hr>
+<h3>Click Event</h3>
+<div class="text-3xl bg-red-400" onclick="clickTest(this,'rotate-90-bl-cw')">Custom Animation</div>
 
   
 <script src="/public/home/home.js"></script>
