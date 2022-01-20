@@ -2236,6 +2236,26 @@ video {
       transform-origin: 0% 100%;
     }
   }
+.rotate-90-horizontal-bck {
+    -webkit-animation: rotate-90-horizontal-bck 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: rotate-90-horizontal-bck 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+@-webkit-keyframes rotate-90-horizontal-bck {
+    0% {
+      transform: rotateX(0);
+    }
+    100% {
+      transform: rotateX(-90deg);
+    }
+  }
+@keyframes rotate-90-horizontal-bck {
+    0% {
+      transform: rotateX(0);
+    }
+    100% {
+      transform: rotateX(-90deg);
+    }
+  }
 /* 
 The 'animation' property is a shorthand property for:
 
@@ -2551,4 +2571,8 @@ running
 .group:hover .group-hover\:rotate-90-bl-ccw {
     -webkit-animation: rotate-90-bl-ccw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: rotate-90-bl-ccw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+.group:hover .group-hover\:rotate-90-horizontal-bck {
+    -webkit-animation: rotate-90-horizontal-bck 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: rotate-90-horizontal-bck 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
